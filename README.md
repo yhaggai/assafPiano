@@ -3,6 +3,7 @@
 A Hebrew piano and note-recognition game for children.
 
 - Play 25 piano keys with a mouse, touch, or computer keyboard.
+- Slide across keys to play successive notes; use multiple fingers for chords.
 - Match a note shown with its Hebrew name, symbol, color, and staff notation.
 - Hear the requested note without revealing the correct key.
 - Celebrate correct answers and advance automatically after two seconds.
