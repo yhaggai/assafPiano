@@ -22,3 +22,9 @@ Open http://localhost:8765. The app has no dependencies or build step. Its sourc
 ## Publish
 
 Pushes to `main` deploy `dist/` to GitHub Pages through `.github/workflows/pages.yml`.
+
+## Microphone octave
+
+Select the octave of the lowest C you play using the microphone octave selector. The default is C3, matching the supplied piano recording; choose C4 for middle C. Microphone notes are transposed into the lesson octave while keeping low C and high C distinct. On-screen keys keep their original pitches.
+
+Run the microphone regression checks with `node --test tests/microphone.test.cjs`. To also check the supplied recording, decode it with `ffmpeg -i /path/to/piano.opus -ar 48000 -ac 1 -f f32le /tmp/piano-sample.f32`, then run `PIANO_SAMPLE=/tmp/piano-sample.f32 node --test tests/microphone.test.cjs`. The personal recording is not included in the repository.
